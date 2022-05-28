@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="demo.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="prac9.css">
+    </head>
+    <body>
+        <main>
+            <div class="c6">
+                <h1>Grocery Items</h1>
+            </div>
+            <br><br>
+            <div id="alerts"></div>
+            <div class="productcont">
+                    <div class="product">
+                        <h3 class="productname">Rice</h3>
+                        <p class="price">$10</p>
+                        <button class="addtocart">Add To Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3 class="productname">Sugar</h3>
+                        <p class="price">$20</p>
+                        <button class="addtocart">Add To Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3 class="productname">Cooking Oil</h3>
+                        <p class="price">$140</p>
+                        <button class="addtocart">Add To Cart</button>
+                    </div>
+                    </div>
+                    <div class="cart-container">
+                      <h2>Cart</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                          <th><strong>Product</strong></th>
+                          <th><strong>Price</strong></th>
+                        </tr>
+                        </thead>
+                        <tbody id="carttable">
+                        </tbody>
+                      </table>
+                      <hr>
+                      <table id="carttotals">
+                        <tr>
+                          <td><strong>Items</strong></td>
+                          <td><strong>Total</strong></td>
+                        </tr>
+                        <tr>
+                          <td>x <span id="itemsquantity">0</span></td>
+                         
+                          <td>$<span id="total">0</span></td>
+                        </tr></table>
+            
+                        
+                      <div class="cart-buttons">  
+                        <button id="emptycart">Empty Cart</button>
+                        <button id="checkout">Checkout</button>
+                      </div>
+                    </div>
+            </div>
+            <script  src="script.js"></script> 
+        </main>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

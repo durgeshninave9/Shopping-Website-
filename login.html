@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.c1{
+                border: 2px solid black;
+                margin-left: 500px;
+                margin-right: 500px;
+                padding: 40px;
+                background-color:lightgoldenrodyellow;
+                border-radius: 20px;
+            }
+            body#i1{
+                background-image: url("s4.webp");
+            }
+        </style>
+         <script src="prac9.js"></script>
+    </head>
+    <br><br><br><br>
+    <body id="i1">
+        <div class="c1">
+            <table align="center" >
+                <h1 style="text-align: center;">Login Form</h1>
+                <hr>
+                <br>
+                <tr>
+                    <td>User ID :</td>
+                    <td><input type="text" name="userid" id="userid"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="text" name="password" id="password" onblur="pswd_check()"></td>
+                </tr>
+                <tr>
+                    <br><th colspan="2"><input type="submit" onclick="func()"></th>
+                </tr>
+            </table>
+        </div>
+        <script>
+            function func(){
+                window.alert("You are Logged in")
+                window.location.href="practical9.html"
+            }
+        </script>
+    </body>
+</html>

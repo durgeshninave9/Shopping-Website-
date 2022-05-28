@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.c1{
+                border: 2px solid black;
+                margin-left: 490px;
+                margin-right: 490px;
+                padding: 40px;
+                background-color: cornsilk;
+                border-radius: 25px;
+                box-shadow: antiquewhite;
+            }
+            body#i1{
+                background-image: url("s4.webp");
+            }
+        </style>
+        <script src="prac9.js"></script>
+    </head>
+    <br><br><br><br>
+    <body id="i1">
+        <div class="c1">
+            <table align="center" >
+                <h1 style="text-align: center;">Registration Form</h1>
+                <hr>
+                <br>
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter Your Name" onkeypress="letter_check()" onblur="name_check()"></td>
+                </tr>
+                <tr>
+                    <td>Email ID :</td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter Valid Email ID" onblur="email_check()"></td>
+                </tr>
+                <tr>
+                    <td>Phone No. :</td>
+                    <td><input type="tel" name="phone" id="phone" placeholder="Enter Valid Phone Number" onkeypress="num_check()" onblur="phone_no()"></td>
+                </tr>
+                <tr>
+                    <td>User ID :</td>
+                    <td><input type="text" name="userid" id="userid" placeholder="Enter User ID"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="text" name="password" id="password" placeholder="Enter Valid Password" onblur="pswd_check()"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password :</td>
+                    <td><input type="text" name="cpassword" id="cpassword" placeholder="Enter Confirm Password" onblur="cnfrm_pswd()"></td>
+                </tr>
+                <tr>
+                    <br><td><input type="submit" onclick="func()"></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            function func(){
+                window.alert("Registration Successfully")
+                window.location.href="practical9.html";
+            }
+        </script>
+    </body>
+</html>
